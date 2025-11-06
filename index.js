@@ -11,6 +11,13 @@
 
 const twoSum = (nums, target) => {
     //write your code here
+    for (let i = 0; i < nums.length; i++) {
+        for (let j = i + 1; j < nums.length; j++) {
+            if (nums[i] + nums[j] === target) {
+                return [i, j];
+            }
+        }
+    }
 };
 
 // Example usage (commented out to avoid interference with tests)
